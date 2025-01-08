@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 1;
+    padding: 10px;
+    height: 900px; /* Should be removed. Only for demonstration */
+  }
+  .column:first-of-type {
+    display: grid;
+    place-items: center;
+    min-height: 200px; /* Or whatever height you need */
+    /* Or use flexbox */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.column {
+    flex: 1; /* If you're using flexbox for the parent layout */
+    padding: 10px;
+}
+  
+  body {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ /* .column:first-child {
+    background-color: #aaa;    i might use this in the future but basically it makes the left column grey
+}
+*/
+.column:last-child {
+    background-image: url('https://cdn.gencraft.com/prod/user/66a97b23-7e2a-44ff-a635-938f1fbfbecb/fcc362a4-c0f3-4c84-be16-fb6d653858a8/image/image0_0.jpg?Expires=1736457064&Signature=EOorX1Qr1M6hUgqffut8W8PjNc-hXrqYxdc6J3o4Em7UgWLhpRhHM0kiW5XUVvOpZeMxFLxK42d~VOAQ7wyXQQ5G0mNai3JMHY0ajRxNUeN9tUTuGN9FAcuebhNJS44SQIYSkLe6wMgNSU6cWdnm-qfYGZcfjCdedlwqxKPgfPvxQhA8I6TaOXid7qxgW9U1zXOUgHcD0pIEqzIrICfhkt~H7bApd~eYtUrdl2gcYlUgbuDndrqRnp-0ngH3QB~r1LX~c7VSIX2hme4QSt3TOYzqlRFjQAV2zqkIRhUz~2B9NTE9HzBrybaIioej3R8QT2P~WYr7sjrWt-EV3vw4DQ__&Key-Pair-Id=K3RDDB1TZ8BHT8');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.dark-mode nav {
+    background-color: #111; /* Match the dark mode background */
+    color: #eee;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; /* Separate items */
+    align-items: center;
+    width: 100%;
+}
+nav li:last-child {
+    margin-left: auto; /* Push the last item (button) to the right */
+}
+
+nav li {
+    margin: 0 10px; /* Add some spacing between nav items */
+}
+
+nav button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent; /* Make background transparent */
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+}
+
+#typed-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    animation: typing 3.5s steps(40, end),
+               blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+h1 {
+    font-size: xx-large;
+  }
+
+  .css-button-sliding-to-bottom--black {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #212529;
+  color: #212529;
+}
+.css-button-sliding-to-bottom--black:hover {
+  color: #fff;
+}
+.css-button-sliding-to-bottom--black:hover:after {
+  height: 100%;
+}
+.css-button-sliding-to-bottom--black:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #212529;
+}
+.redbutton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+.redbutton:hover {
+  background: #fff;
+  color: #d90429
+}
