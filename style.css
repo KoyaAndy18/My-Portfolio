@@ -40,7 +40,7 @@
 }
 */
 .column:last-child {
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ce2d620-0347-49a1-9752-187da63557ab/dfnuuyy-a15bbe48-7d47-40bb-9202-9e5260c97d3d.png/v1/fill/w_1280,h_1280,q_80,strp/realistic_photo_of_a_guy_working_on_his_computer_by_tranc23_dfnuuyy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzljZTJkNjIwLTAzNDctNDlhMS05NzUyLTE4N2RhNjM1NTdhYlwvZGZudXV5eS1hMTViYmU0OC03ZDQ3LTQwYmItOTIwMi05ZTUyNjBjOTdkM2QucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kHQff0nKhLNUBNko17Ucl0w2Cn5Qw8_9T2FUCmmVM3U');
+    background-image: url('https://cdn.gencraft.com/prod/user/66a97b23-7e2a-44ff-a635-938f1fbfbecb/c241206e-32cc-4269-95df-84c195892bcb/image/image0_0.jpg?Expires=1736649030&Signature=U5j7wwf676mwhGiHUYwGEmBk7qKcXji90mxSW2SE6cXznzxzW5SewxCLX7UILGIMgcn1qZs7PjcXUQ6tgFJCatX4HpuDyxK05PuXaPwxrewyJf3~fkTNeL5cDHwzDw2luuYuiFfGu04yPNBno4sx~w1f8Px00c5eklDF3vE8kpNZ5fy9aI6CNtK6bl1wL49SrgQPOC4IrFfJZ8NOiqrslXqfbChsErzPfi0JiZWSFHLeHA3pw9pnNouz4wDamUttF8gBIRMal9YP0r6xIJHFLURc7iFpVLwFgBj9GqbUut3iBeahrftu7Auh-7F~L5G8eojTISl5otXma6Jk~WA1Sw__&Key-Pair-Id=K3RDDB1TZ8BHT8');
     background-size: cover;
     background-position: center;
     color: white;
@@ -180,4 +180,41 @@ h1 {
 .redbutton:hover {
   background: #fff;
   color: #d90429
+}
+
+a {
+  cursor: pointer;
+}
+
+/* For buttons */
+button {
+  cursor: pointer;
+}
+
+/* For input type submit */
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* For any element you want to make clickable */
+.clickable-element {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+textarea {
+  height: 200px; 
+  width: 500px;  
+}
+input, textarea {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #555;
 }

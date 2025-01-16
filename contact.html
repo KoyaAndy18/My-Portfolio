@@ -7,32 +7,46 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script defer src="gsap.js"></script>
+
     <title>Document</title>
 </head>
 <body>
     <nav>
         <ul>
-           <a href="index.html">andy.malunes03292021@gmail.com</a> 
+          <a href="index.html"><h2>andy.malunes03292021@gmail.com</h2></a>
           <li><button
              id="darkModeToggle">  <i class="fas fa-sun"></i> Dark Mode</button></li> </ul>
       </nav>
       <script src="darkMode.js"></script>
 <div class="row">
   <div class="column one">
-    <h1 id="typed-text" class="hidden">I am Andy, I develop and create websites<h1>
-        <script src="typedText.js"></script>
+    <h2>Contact number +639067673812</h2>
+    <!--PHP CONTACT FORM-->
 
-        <button class="redbutton">My Portfolio</button>
-        <button class="redbutton btn" id="nextPageBtn">Contact Me</button>
+  <form action="mailer.php" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name here" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your email here" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number here" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" placeholder="Message" required></textarea><br><br>
+
+    <button type="submit" class="redbutton">Submit</button>
+</form>
+
   </div>
   <div class="column">
   </div>
+  
 </div>
+
+
 
 </body>
 </html>
